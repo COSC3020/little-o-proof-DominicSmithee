@@ -24,5 +24,6 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 ANSWER:
 Proof: By definition, $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
-Base case: The definition of little o ( $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) is different than the definition of Big O ( $\exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ )
+Base case: The definition of little o ( $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) is different than the definition of Big O ( $\exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) by a simple 'exists' instead of 'forall' such that $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
+Induction: 
 

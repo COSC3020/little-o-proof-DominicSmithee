@@ -1,6 +1,8 @@
 # Little-o
 
 I used wikipedia to determine the difference between big O and little o. 
+I used stackOverflow to remember the difference between the definitions of big O and little o, specifically Tyler McHenry's explanation:
+https://stackoverflow.com/questions/1364444/difference-between-big-o-and-little-o-notation
 
 I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
@@ -33,5 +35,5 @@ Base case: The definition of little o ( $\forall c>0, \exists n_0, \forall n\ge 
 Induction Hypothesis: $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ when n = 1, as $f(1)\in O(g(1))$ is always true when $f(1)\in o(g(1))$ by definition of $\exists$ and 
 $\forall$
 
-Induction Step: as $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ when n = 1, $f(n+1)\in O(g(n+1))$ is always true when $f(n+1)\in o(g(n+1))$ by defition of $\exists$ and $\forall$ which states that $\forall n \in g(n)$, there exists $\forall n+1 \in g(n)$
+Induction Step: as $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ when n = 1, $f(n+1)\in O(g(n+1))$ is always true when $f(n+1)\in o(g(n+1))$ by defition of $\exists$ and $\forall$ which states that $\forall n \in g(n)$, there exists $\forall n+1 \in g(n+1)$ and $\forall n \in g(n)$ implies $\exists n \in g(n)$
 

@@ -28,10 +28,10 @@ ANSWER:
 
 Proof: By definition, $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
 
-Base case: The definition of little o ( $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) is different than the definition of Big O ( $\exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) by a simple 'exists' instead of 'forall' such that $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
+Base case: The definition of little o ( $\forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$ ) is different than the definition of Big O ( $\exists c>0, \exists n_0, \exists n\ge n_0: f(n) < c g(n)$ ) by a simple 'exists' instead of 'forall' such that $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
 
 Induction Hypothesis: $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ when n = 1, as $f(1)\in O(g(1))$ is always true when $f(1)\in o(g(1))$ by definition of $\exists$ and 
 $\forall$
 
-Induction Step: 
+Induction Step: as $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ when n = 1, $f(n+1)\in O(g(n+1))$ is always true when $f(n+1)\in o(g(n+1))$ by defition of $\exists$ and $\forall$ which states that $\forall n \in g(n), there exists \forall n+1 \in g(n)$
 

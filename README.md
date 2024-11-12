@@ -30,7 +30,7 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 ANSWER:
 
 Definitions:
-little o (given)
+little o (given):
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 Big O:
@@ -38,5 +38,6 @@ $f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(
 
 Proof: By definition, $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$
 
+Using the definitions, we can see that $f(n) < c g(n)$ will be equal to $f(n) \leq c g(n)$ for any c that works with g(n) and f(n) inside little o definition since $f(n) < c g(n)$ is equal to $f(n) \leq c g(n)$ when 
 
 
